@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background: radial-gradient(#98b3d3, #0d082b);
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    background:linear-gradient(black, rgba(0,0,0,0));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 7rem;
+    padding: 15px;
+    display: inline-block;
+}
+
+nav button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    color: white;
+    font-size: 1rem;
+    background: none;
+    border: none;
+}
+
+nav button:hover {
+    cursor: pointer;
+    color: rgb(255, 0, 0);
+    .arrow {
+        border: solid rgb(255, 0, 0);
+        border-width: 0 3px 3px 0;
+    }
+}
+
+.search {
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+
+div button {
+    position: relative;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid rgb(69, 69, 69);
+    background-color: white;
+    right: 13px;
+    top: 0.5px;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    position: relative;
+    left: 5px;
+    bottom: 3px
+}
+
+main {
+    color: white;
+    padding-left: 5vw;
+    padding-top: 5vh;
+    font-weight: lighter;
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+h2 {
+    position: relative;
+    font-size: 4rem;
+    right: 5px;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-top: 5px;
+    position: relative;
+    left: 40px;
+}
+
+h5 {
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-top: 5px;
+    position: relative;
+    left: 70px;
+    bottom: 10px;
+}
+
+.location {
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.timer {
+    margin: 10vh;
+    position: relative;
+    right: 5px;
+}
+
+.time {
+    display: flex;
+    position: relative;
+    right: 20px;
+}
+
+#days {
+    font-size: 7rem;
+    font-weight: bold;
+    position: relative;
+    right: 15px;
+}
+
+.days {
+    position: relative;
+    left: 55px;
+}
+
+#hours, #minutes, #seconds {
+    font-size: 3rem;
+    position: relative;
+    left: 40px;
+}
+
+.hours, .minutes, .seconds {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 70px;
+    text-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+

@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgrey;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.menu {
+    width: 30px;
+    filter: invert(1);
+}
+
+#heading {
+    color: #f4f4f4;
+    font-size: 1.3rem;
+    margin-left: 6px;
+    position: relative;
+    top: 3px;
+}
+
+.calc {
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+input {
+    border: none;
+    background-color: black;
+    border-radius: 3px;
+    text-align: right;
+    width: 258px;
+}
+
+#exp {
+    font-size: 1.5rem;
+    color: grey;
+}
+
+#ans {
+    font-size: 2.9rem;
+    color: white;
+    outline: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+}
+
+button {
+    border: none;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #333;
+    cursor: pointer;
+}
+
+.ctrl {
+    background-color: #666;
+}
+
+.operator {
+    background-color: orange;
+}
